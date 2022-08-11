@@ -1,0 +1,90 @@
+:root {
+  font-size: 22px;
+  font-family: 'Shadows Into Light', cursive;
+  --yellow: #fde047;
+  --dark-yellow: #eab308;
+  --light-grey: #e5e5e5;
+  --grey: #d4d4d4;
+  --blue: #7dd3fc;
+  --red: #f87171;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: var(--blue);
+  height: 100vh;
+}
+
+#scoreboard{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 70vw;
+}
+
+#difficultylevel{
+  margin-top: 0px;
+}
+
+.humanicon, .roboticon {
+  width: 100px;
+}
+
+#gameOptions{
+  margin-left: 25px;
+}
+
+#board{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    background-color: white;
+    width: 500px;
+    height: 500px;
+    border-radius: 8px;
+    gap: 10px;
+    padding: 10px;
+}
+
+.square {
+  border-radius: 4px;
+}
+
+.none {
+  background-color: var(--light-grey);
+}
+
+.none:hover {
+  background-color: var(--grey);
+  background-image: url(crossdarkgrey.svg);
+  margin: 1px;
+}
+
+.x {
+  background-color: var(--yellow);
+  background-image: url(crossdarkyellow.svg);
+}
+
+.o {
+  background-color: var(--red);
+  background-image: url(noughtdarkred.svg);
+}
+
+button, select {
+  -webkit-appearance: none;
+  background-color: white;
+  border: none;
+  font: inherit;
+  text-align: center;
+  width: 140px;
+  margin: 30px 0px 10px 0px;
+  padding: 5px;
+  border-radius: 8px;
+}
+
+select:hover, button:hover{
+  transform: scale(1.1);
+}
