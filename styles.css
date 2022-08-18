@@ -31,6 +31,11 @@ body {
   margin-top: 0px;
 }
 
+#gameMessage{
+  padding-top: 90px;
+  width: 500px;
+}
+
 .humanicon,
 .roboticon {
   width: 100px;
@@ -90,7 +95,7 @@ select {
   font: inherit;
   text-align: center;
   width: 160px;
-  margin: 30px 0px 10px 0px;
+  margin: 20px 0px 20px 0px;
   padding: 5px;
   border-radius: 8px;
 }

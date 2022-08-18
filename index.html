@@ -25,9 +25,7 @@
           <p class="score yourscore"></p>
         </div>
         <div id="gameOptions">
-          <p id="gameGuide">
-            Next Step: <br /> Select Botson's difficulty level and place your first cross!
-          </p>
+          <p id="gameMessage"></p>
           <select name="difficultylevel" id="difficultylevel">
             <option value="Easy">Easy</option>
             <option value="Medium">Medium</option>
@@ -45,7 +43,7 @@
     <main>
       <div id="board"></div>
     </main>
-    <button id="newgame">New Game</button>
-    <button id="resetscore">Reset Score</button>
+    <button onclick="gameBoard.newGame()" id="newgame">New Game</button>
+    <button onclick="gameBoard.resetMatch()" id="resetscore">Reset Match</button>
   </body>
 </html>
