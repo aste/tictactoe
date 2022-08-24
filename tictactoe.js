@@ -137,7 +137,7 @@ let game = (() => {
                     _addSquareEvents()
                     _setGameMessage(1)
                 }
-            }, Math.floor( 500 + Math.random() * 750))
+            }, Math.floor(500 + Math.random() * 750))
         } else {
             _setGameMessage(3)
         }
@@ -167,7 +167,7 @@ let game = (() => {
             let bestMove
 
             // Returns a score value if a terminal game state, win or draw, is found
-            
+
             if (_checkForWin(newBoard)[0] || emptySquareIndices.length === 0) {
                 if (randomZeroToOne < _level) {
                     if (_checkForWin(newBoard)[1] == "x") { return { score: -10 } }
@@ -178,7 +178,7 @@ let game = (() => {
                     else if (_checkForWin(newBoard)[1] == "o") { return { score: 0 } }
                     else if (emptySquareIndices.length === 0) { return { score: 0 } }
                 }
-        }
+            }
 
             // Go through available spots on the board
             for (let i = 0; i < emptySquareIndices.length; i++) {
@@ -224,6 +224,7 @@ let game = (() => {
         return resultObj
     }
 
+    // Public Methods
     const resetMatch = () => {
         gameState.resetScore()
         _updateScore()
